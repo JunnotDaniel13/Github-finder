@@ -15,13 +15,13 @@ function RepoList({ repos }) {
               className="mb-2 rounded-md card bg-gray-800 hover:bg-gray-900 "
             >
               <div className="card-body ">
-                <h3 className="mb-2 text-xl font-semibold">
+                <h3 className="mb-2 text-xl text-white font-semibold">
                   <a href={repo.html_url}>
-                    <FaLink className="inline mr-1" /> {repo.name}
+                    <FaLink className="inline mr-1 text-white" /> {repo.name}
                   </a>
                 </h3>
                 {repo.description ? (
-                  <p className="mb-3">{repo.description}</p>
+                  <p className="mb-3 text-white">{repo.description}</p>
                 ) : null}
                 <div>
                   <div className="mr-2 badge badge-info badge-lg">
